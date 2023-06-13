@@ -1,12 +1,37 @@
-de: I
-para: B
+# Date me
 
-quer rodar e não sabe como?
+Um projeto desenvolvido especialmente para os os devs apaixonadinhos de plantão dedicarem à aquela pessoa especial
 
-eu te ensino.
+## Autores
 
-vai lá no terminal e instalar as dependencias com o comando "yarn""
+- [@ianaugustosilva](https://www.github.com/ianaugustosilva)
 
-depois roda yarn start
+## Screenshots
 
-e seja feliz :)
+[em breve]
+
+## Quer rodar localmente e não sabe como? Vem que eu te ensino.
+
+Clone o projeto
+
+```bash
+  git clone https://github.com/ianaugustosilva/date-me
+```
+
+Entre no diretório do projeto
+
+```bash
+  cd date-me
+```
+
+Instale as dependências
+
+```bash
+  yarn install
+```
+
+Inicie o servidor
+
+```bash
+  yarn start
+```
