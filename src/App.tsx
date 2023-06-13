@@ -4,7 +4,9 @@ import React from "react";
 
 function App() {
 	const handleYesClick = (): void => {
-		alert("TE AMO");
+		if (window.confirm("te amo!")) {
+			window.open("https://www.youtube.com/watch?v=EbVV9FDxM4c");
+		}
 	};
 
 	const handleNoHover = (): void => {
