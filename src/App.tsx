@@ -1,12 +1,12 @@
 import "./style.css";
 
-import React, { useState } from "react";
+import React from "react";
 
 function App() {
-	const [answer, setAnswer] = useState<string>("");
-
 	const handleYesClick = (): void => {
-		setAnswer("te amo sua linda <3");
+		alert("TE AMO");
+		// alert("vamo gozar gostoso?");
+		// alert("hoje?");
 	};
 
 	const handleNoHover = (): void => {
@@ -26,13 +26,14 @@ function App() {
 	return (
 		<div className='container'>
 			<h1>Quer namorar comigo?</h1>
-			<button className='buttonYes' onClick={handleYesClick}>
-				SIM
-			</button>
-			<button className='buttonNo' id='no-button' onMouseOver={handleNoHover}>
-				NÃO
-			</button>
-			{answer && <p>Você respondeu: {answer}</p>}
+			<div className='buttons'>
+				<button className='buttonYes' onClick={handleYesClick}>
+					SIM
+				</button>
+				<button className='buttonNo' id='no-button' onMouseOver={handleNoHover}>
+					NÃO
+				</button>
+			</div>
 		</div>
 	);
 }
