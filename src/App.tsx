@@ -5,8 +5,6 @@ import React from "react";
 function App() {
 	const handleYesClick = (): void => {
 		alert("TE AMO");
-		// alert("vamo gozar gostoso?");
-		// alert("hoje?");
 	};
 
 	const handleNoHover = (): void => {
@@ -26,7 +24,7 @@ function App() {
 	return (
 		<div className='container'>
 			<h1>Quer namorar comigo?</h1>
-			<div className='buttons'>
+			<div>
 				<button className='buttonYes' onClick={handleYesClick}>
 					SIM
 				</button>
