@@ -28,7 +28,7 @@ function App() {
 			<h1>Quer namorar comigo?</h1>
 			<div>
 				<button className='buttonYes' onClick={handleYesClick}>
-					SIM
+					SIM :)
 				</button>
 				<button className='buttonNo' id='no-button' onMouseOver={handleNoHover}>
 					NÃO
