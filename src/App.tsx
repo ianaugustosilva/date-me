@@ -5,29 +5,27 @@ import React from "react";
 function App() {
 	const handleYesClick = (): void => {
 		if (window.confirm("te amo!")) {
-			window.open("https://www.youtube.com/watch?v=EbVV9FDxM4c");
+			window.open("https://www.google.com/search?q=noice&oq=noice&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIJCAYQABgKGIAEMgkIBxAAGAoYgAQyCQgIEAAYChiABDIJCAkQABgKGIAE0gEHOTQxajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:c000df66,vid:a8c5wmeOL9o");
 		}
 	};
 
 	const handleNoHover = (): void => {
-		const button = document.querySelector<HTMLButtonElement>("#no-button");
+		let button = document.getElementById('no-button');
+    let height = window.innerHeight - 50;
+    let width = window.innerWidth - 50;
 
 		if (button) {
-			const buttonWidth = button.offsetWidth;
-			const buttonHeight = button.offsetHeight;
-			const screenWidth = window.innerWidth;
-			const screenHeight = window.innerHeight;
-			const randomX = Math.floor(Math.random() * (screenWidth - buttonWidth));
-			const randomY = Math.floor(Math.random() * (screenHeight - buttonHeight));
-			button.style.transform = `translateX(${randomX}px) translateY(${randomY}px)`;
+			button.style.position = "absolute"
+			button.style.top = Math.random() * height + "px";
+			button.style.left = Math.random() * width + "px";
 		}
-	};
+	};	
 
 	return (
 		<div className='container'>
-			<h1>Quer namorar comigo?</h1>
-			<div>
-				<button className='buttonYes' onClick={handleYesClick}>
+			<h1>C*zinho hoje?</h1>
+			<div className="button-container">
+				<button className='buttonYes' id='yes-button' onClick={handleYesClick}>
 					SIM :)
 				</button>
 				<button className='buttonNo' id='no-button' onMouseOver={handleNoHover}>
