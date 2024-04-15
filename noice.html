@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Componente React em HTML</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .container {
+        font-size: 20px;
+        color: white;
+        height: 250px;
+        width: 350px;
+        border-radius: 10px;
+        background-color: #191919;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        width: 150px;
+      }
+
+      button {
+        height: 30px;
+        width: auto;
+        background: white;
+        color: black;
+        font-weight: 600;
+        border-radius: 5px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="container">
+      <h1>C*zinho hoje?</h1>
+      <div class="button-container">
+        <button class="buttonYes" id="yes-button">SIM :)</button>
+        <button class="buttonNo" id="no-button">NÃO</button>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("yes-button")
+        .addEventListener("click", function () {
+          if (window.confirm("te amo!")) {
+            window.open("https://www.youtube.com/shorts/pd-L6YVTUv8");
+          }
+        });
+
+      document
+        .getElementById("no-button")
+        .addEventListener("mouseover", function () {
+          let button = document.getElementById("no-button");
+          let height = window.innerHeight - 50;
+          let width = window.innerWidth - 50;
+          if (button) {
+            button.style.position = "absolute";
+            button.style.top = Math.random() * height + "px";
+            button.style.left = Math.random() * width + "px";
+          }
+        });
+    </script>
+  </body>
+</html>
