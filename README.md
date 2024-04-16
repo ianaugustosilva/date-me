@@ -8,7 +8,8 @@ Um projeto desenvolvido especialmente para os os devs apaixonadinhos de plantão
 
 ## Screenshots
 
-[em breve]
+![image](https://github.com/ianaugustosilva/date-me/assets/20050900/f251cde8-a5f1-4efe-bcb0-95cbf8594e4c)
+
 
 ## Quer rodar localmente e não sabe como? Vem que eu te ensino.
 
